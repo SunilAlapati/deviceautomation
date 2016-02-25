@@ -1,6 +1,6 @@
-@ps4 @disabled
-Feature: PS4 Account Creation
 
+Feature: PS4 Account Creation
+@hotfix
   @ps4createAndLogin
   Scenario: Create a new user on PS4
     Given I start PS4 console
@@ -44,7 +44,7 @@ Feature: PS4 Account Creation
     And I press PS4 Skip button
     And I press PS4 Activate button
 
-  @testGet3
+  @regression
   Scenario: get PS4 User
     When I have a valid OAuth token with sony13579 for abhirup.chatterjee+7@smss.sony.com
     And I make a GET request to accounts:
